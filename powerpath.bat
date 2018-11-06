@@ -1,1 +1,0 @@
-powershell -NoExit "$Env:PATH += ';D:\MinGW\bin;D:\Nasm\;D:\;'"
