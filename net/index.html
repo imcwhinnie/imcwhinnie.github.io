@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jazascript</title>
+  <link href="style.css" type="text/css" rel="stylesheet" >
+</head>
+<body>
+  <p>Your computer is currently training a neural network to cook stew.</p>
+  <div>
+  	<canvas id="myCanvas" width="600" height="400">
+		Your browser does not support the canvas element.
+    </canvas><br>
+    <button onclick="dosomething(go,ins,outs)" >Train Me</button>
+    <div class="slidecontainer"><input type="range" min="0" max="1" value="0" class="slider" id="slider" oninput="drawnetwork(go)"></div><p id="sliderout"></p>
+  </div>
+  <div>
+    <table id="dataTable">
+    </table>
+  </div>
+</body>
+<script type='text/javascript' src='jaza.js' ></script>
+<script type='text/javascript' src='show.js' ></script>
+<script type='text/javascript' src='data.js' ></script>
+</html>
