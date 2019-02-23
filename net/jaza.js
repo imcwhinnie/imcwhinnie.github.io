@@ -457,7 +457,7 @@ function dosomething(net, input_data, output_data){
   drawnetwork(net);
 }
 
-go = new NeuralNetwork([2,10,1]);
+go = new NeuralNetwork([2,10,2,10,1]);
 ins = new mat([[0.5,0.25],[0.25,0.5],[0.5,0.5],[0.25,0.25]]);
 outs = new mat([[1],[0],[1],[0]]);
 go.feedforward(ins);
