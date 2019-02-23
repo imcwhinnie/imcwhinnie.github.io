@@ -5,6 +5,14 @@ var table = document.getElementById('dataTable');
 
 
 function showdata(inputs, outputs){
+
+
+    while(table.firstChild){
+       table.removeChild(table.firstChild);
+    }
+
+
+
     var rowsinput = inputs.shape[0];
     var columnsinput = inputs.shape[1];
 
@@ -49,5 +57,3 @@ function showdata(inputs, outputs){
     }
 }
 
-
-window.onload = showdata(ins, outs);

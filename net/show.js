@@ -1,5 +1,5 @@
-alert('This page may use a large portion of your CPU power!');
-
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
 
 class coord{
 	constructor(x,y){
@@ -9,6 +9,7 @@ class coord{
 }
 
 function drawnode(xco, yco, height, canvas, text){
+	canvas.fillStyle = "#b30086"; 
 	ctx.beginPath();
 	ctx.arc(xco, yco, height/2, 0, 2*Math.PI);
 	ctx.stroke();
@@ -23,6 +24,7 @@ function drawnetwork(net){
 
 	var canvas = document.getElementById("myCanvas");
 	var ctx = canvas.getContext("2d");
+	canvas.fillStyle = "#b30086"; 
 	ctx.clearRect(0,0,canvas.width, canvas.height);
 	var maximumnodes = max(net.layers_info);
 	var spacing = 75;
@@ -35,8 +37,10 @@ function drawnetwork(net){
 		height_of_node = 50;
 	}
 
-	if(maximumnodes*height_of_node < canvas.height){
+	if(maximumnodes*height_of_node <= canvas.height){
 		canvas.height = maximumnodes*height_of_node;
+	}else{
+		canvas.height = 400;
 	}
 
 
@@ -82,9 +86,3 @@ function drawnetwork(net){
 		}
 	}
 }
-
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
-
-
-window.onload = drawnetwork(go);

@@ -448,20 +448,4 @@ class NeuralNetwork{
 
 }
 
-function dosomething(net, input_data, output_data){
-  times = Number(prompt('How many times would you like to train?'))
-  for(var x=0; x<times; x++){
-    net.train(input_data, output_data);
-  }
-  console.log('Average Cost: ', net.averageCost(output_data));
-  drawnetwork(net);
-}
-
-go = new NeuralNetwork([2,10,2,10,1]);
-ins = new mat([[0.5,0.25],[0.25,0.5],[0.5,0.5],[0.25,0.25]]);
-outs = new mat([[1],[0],[1],[0]]);
-go.feedforward(ins);
-
-console.log('Average Cost: ', go.averageCost(outs));
-
 

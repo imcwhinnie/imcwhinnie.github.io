@@ -1,9 +1,104 @@
-table{
-      border-collapse: collapse;
+
+body{
+      margin: 0px;
 }
-td, th{
+
+
+#header{
+      width: 100%;
+      background-color: #b30086;
+      height: 88px;
+      overflow: hidden;
+}
+
+#header h1{
+      margin: 0px;
+      margin-left: 10px;
+      width: fit-content;
+      display: inline-block;
+      margin-right: 100px;
+      font-family: monospace;
+      font-size: 75px;
+}
+
+#header p{
+      display: inline-block;
+      margin-bottom: 10px;
+      font-family: monospace;
+}
+
+#controls{
+      display: inline-block;
+      float: left;
+      width: 200px;
+      background-color: grey;
+      position: fixed;
+      height: calc(100% - 88px);
+      overflow-y: auto;
+      overflow-x: hidden;
+}
+
+#trainme{
+      width: 75px;
+      border: none;
+      margin: calc(50% - 37.5px);
+      margin-top: 0px;
+      margin-bottom: 17px;
+}
+
+#controls > div{
+      padding: 10px;
+      background-color: #d6d6c2;
+      font-family: monospace;
+      margin-bottom: 17px;
+}
+
+#main{
+      display: inline-block;
+      float: right;
+      width: calc(100% - 240px);
+      background-color: white;
+      position: fixed;
+      height: calc(100% - 128px);
+      margin-left: 200px;
+      padding: 20px;
+      overflow-y: scroll;
+      padding-top: 10px;
+}
+
+#dataTable{
+      margin-top: 30px;
+      margin-left: 50px;
+      border-collapse: collapse;
+      font-family: monospace;
+}
+
+#dataTable td, th{
       border: 1px solid black;
 }
+
 #sliderout{
     display: inline-block;
+}
+
+#footer{
+      width: 100%;
+      position: fixed;
+      bottom: 0px;
+      height: 30px;
+      background-image: linear-gradient(rgba(255,255,255,0), grey);
+      pointer-events: none;
+}
+
+::-webkit-scrollbar{
+      width: 12px;
+}
+::-webkit-scrollbar-track{
+      background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb{
+      background: #888; 
+}
+::-webkit-scrollbar-thumb:hover{
+      background: #555; 
 }
