@@ -5,7 +5,7 @@
   </head>
   <body>
     <h1>Memes For All</h1>
-    <img src="2w08mz.jpg" ></img>
+    <img src="2w08mz.jpg" id="geogmeme"></img>
     <img src="2qcsd2.jpg" ></img>
     <img src="3m72so.jpg" ></img>
     <img src="8u10jj.png" width="383px"></img>
@@ -15,4 +15,19 @@
     <img src="6h20lk.png" ></img>
     <img src="7a92lw.png" ></img>
   </body>
+  <script type="text/javascript">
+    function widthadjust(){
+      var deletegeography = document.getElementById('geogmeme');
+      var width = deletegeography.getBoundingClientRect()['width'];
+      console.log(deletegeography);
+      console.log(deletegeography.width)
+      images = document.getElementsByTagName('img');
+      for(var i=0; i<images.length; i++){
+        //images[i].width = width;
+      }
+    }
+
+    window.onload = onTimeout(widthadjust, 500);
+
+  </script>
 </html>
