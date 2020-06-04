@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Jazascript</title>
+  <link href="style.css" type="text/css" rel="stylesheet" >
+</head>
+
+<body>
+
+  <div id="header"><h1>Neural Network</h1><p>A Website By Iain McWhinnie.</p></div>
+  
+  <div id="controls" >
+      <div id="title">
+        <h3>Control Panel</h3>
+      </div>
+
+      <button onclick="dosomething(go,ins,outs)" id="trainme">Train Network</button>
+
+      <div>
+        Training Status:<div id="status">Not Training</div>
+        No. of epochs:<div id="count">0</div>
+      </div>
+
+      <div id="slidecontainer">
+        <p id="sliderout">Selected data row: 0</p>  
+        <input type="range" min="0" max="1" value="0" class="slider" id="slider" oninput="drawnetwork(go)">
+      </div>
+
+      <div>
+        Current Average Cost:<p id="averagecost">1000000</p>
+      </div>
+
+      <div>
+          Upload Csv File: <input id="csv-file" type="file" accept=".csv"/>
+          <button onclick="readBlob()">Use as data set</button>
+      </div>
+
+      <div>
+        <button onclick="download()">Download Neural Network</button>
+          <a href="data:text/plain;charset=utf-8,test" download="hi.net" style="display:none;" id="downloadlink">Download</a>
+        Neural networks are saved as a .nn file type.
+      </div>
+
+      <div>
+        Upload Neural Network: <input id="nn-file" type="file" accept=".nn"/>
+        <button onclick="readNet()">Use Neural Network</button>
+      </div>
+
+      <div>
+        Edit Deep Layers:
+        <div id="hiddeninfo">
+          <form name="hidden">
+          <ul id='hiddenlist'>
+          </ul>
+          </form>
+        </div>
+        <input type="submit" value="Change Network" onclick="changedeep()"></input>
+        <button onclick="addlayer()" >Add Layer</button>
+        <button onclick="deletelayer()" >Delete Layer</button><br>
+        Note: Any change will result in a new network with random weights and biases
+      </div>
+  </div>
+
+  <div id="main">
+    <h3 style="font-family: monospace;">Data Visualiser</h3>
+    <div>
+      <canvas id="myCanvas" width="600" height="400">
+      Your browser does not support the canvas element.
+      </canvas><br>
+      <table id="dataTable">
+      </table>
+    </div>
+  </div>
+
+  <div id="footer">
+  </div>
+
+</body>
+<!-- Oh Yeah! -->
+<script type='text/javascript' src='jaza.js' ></script>
+<script type='text/javascript' src='show.js' ></script>
+<script type='text/javascript' src='data.js' ></script>
+<script type="text/javascript" src='read.js' ></script>
+<script type="text/javascript" src='save.js' ></script>
+<script type="text/javascript" src='train.js'></script>
+<script type="text/javascript" src='mods.js' ></script>
+<script type="text/javascript" src='main.js' ></script>
+</html>

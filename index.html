@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Iain.com</title>
+  <!-- Define title and header links -->
+  <title>Iain McWhinnie</title>
   <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
-  <style>
-    body{
-      font-family:'Fresca', sansserif;
-    }
-  </style>
+  <link href="/main.css" type="text/css" rel="stylesheet" />
+
 </head>
 <body>
-  <p>Hello and welcome</p>
 
-  <a href="learn/">Learn</a><br>
-  <a href="memes/">Memes</a><br>
-  <a href="net/">Neural Network</a><br>
+<!-- Navigation header code -->
+<header>
+  <div class="container" >
+      <div class="logodiv">
+        <img src="/trumpetboy.jpg" height="70px" alt="Trumpet Logo" class="logo" />
+        <p class="logocaption">Iain McWhinnie</p>
+      </div>
+      <input type="checkbox" class="nav-toggle" id="nav-toggle">
+      <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/learn/">Tutorials</a></li>
+      </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label" >
+        <span></span>
+      </label>
+  </div>
+</header>
+<!-- End of navigation header -->
+
+
+<!-- Content code -->
+<div class="viewport">
+  <div class="banner">
+    <img src="/banner.jpg" class="bannerimg">
+  </div>
+  <div class="content" >
+    <h1>A Musician, Computer Scientist, Mathematician and Runner</h1>
+
+    <p>This is my webpage. This website displays projects and tutorials that I hope can help someone else somewhere.</p>
+
+  </div>
+</div>
+<!-- End of Content code -->
+
+
+
 </body>
 </html>

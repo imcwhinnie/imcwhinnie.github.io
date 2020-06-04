@@ -1,2 +1,2 @@
 # imcwhinnie.github.io
-All my websites Yay
+Website for Iain McWhinnie
