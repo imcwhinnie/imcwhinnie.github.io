@@ -19,9 +19,9 @@
       <input type="checkbox" class="nav-toggle" id="nav-toggle">
       <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="/about/">About</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/">About</a></li>
         <li><a href="/learn/">Tutorials</a></li>
       </ul>
       </nav>
@@ -39,31 +39,45 @@
     <img src="/banner.jpg" class="bannerimg">
   </div>
   <div class="content" >
-    <h1>Projects, Tutorials and Miscellaneous</h1>
-    <p>The ideas and work of a scottish student</p>
 
-    <h3>Latest Project</h3>
+    <div class="breadcrumb"><a href="/learn/">Tutorials</a> > OS Development</div>
+    <h3>OS Development</h3>
+    <p>05/06/2020</p>
     <p>
-      The latest project I have been working on is <b>this website</b>. I plan to add increased functionality
-      and content now that I am happy with the look and feel of the website.
+      Learn how to build an Operating System from scratch.
+    </p>
+    <h4>Scope:</h4>
+    <p>
+      The scope of this tutorial is to develop a unique basic but very limited kernel from scratch. This
+      tutorial focuses on the code and finding the resources to be able to design your own OS. It will not
+      focus on using the tools such as compilers, linkers, emulators and others but it will briefly mention
+      them.
     </p>
 
-    <h3>Latest Tutorial</h3>
-    <p>
-      I hope to realese a tutorial on basic OS design. This will go in tandem with the process of designing my
-      own OS (which is a very difficult task).
-      I also hope to write a tutorial covering material for the SQA advanced higher mathematics course.
+    <p>This tutorial will be divided into four parts:</p>
+    <ol>
+      <li>Bootloader</li>
+      <li>Kernel</li>
+      <li>Drivers</li>
+      <li>Resources</li>
+    </ol>
+
+    <h4>Prerequisites</h4>
+    <p>This project will use x86 Assembly and C. Make sure you are familiar with both of these languages
+      before starting.
     </p>
+
+    <h4>Tutorials</h4>
+    <a href="/learn/osdev/1/">1.1 How an Operating System starts</a>
+
 
   </div>
-
   <div class="footer-spacer"></div>
-  
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Projects</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/learn/">Tutorials</a></li>
       </ul>
@@ -73,9 +87,10 @@
       All information is provided free of charge but if you use it elsewhere please reference the source.
     </div>
   </footer>
-
 </div>
 <!-- End of Content code -->
+
+
 
 </body>
 </html>

@@ -19,9 +19,9 @@
       <input type="checkbox" class="nav-toggle" id="nav-toggle">
       <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="/about/">About</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/">About</a></li>
         <li><a href="/learn/">Tutorials</a></li>
       </ul>
       </nav>
@@ -39,31 +39,36 @@
     <img src="/banner.jpg" class="bannerimg">
   </div>
   <div class="content" >
-    <h1>Projects, Tutorials and Miscellaneous</h1>
-    <p>The ideas and work of a scottish student</p>
 
-    <h3>Latest Project</h3>
-    <p>
-      The latest project I have been working on is <b>this website</b>. I plan to add increased functionality
-      and content now that I am happy with the look and feel of the website.
-    </p>
+    <div class="breadcrumb"><a href="/learn/">Tutorials</a> > <a href="/learn/osdev">OS development</a> > 1.1</div>
+    <h3>OS Development - 1.1</h3>
+    <p>05/06/2020</p>
+    <h4>How an operating system starts</h4>
 
-    <h3>Latest Tutorial</h3>
-    <p>
-      I hope to realese a tutorial on basic OS design. This will go in tandem with the process of designing my
-      own OS (which is a very difficult task).
-      I also hope to write a tutorial covering material for the SQA advanced higher mathematics course.
-    </p>
+    To start building an operating system we should start where the operating system starts; stored on
+    a drive with is plugged into a computer. So what happens when we turn the computer on. First of all
+    when the power is turned on the computer BIOS runs
+    https://wiki.osdev.org/Memory_Map_(x86)
+
+    <code>mov eax, 4
+    </code>
+    
+    <br>
+    <br>
+    <h4>Sources</h4>
+    <a href="https://www.cs.yale.edu/flint/feng/cos/resources/BIOS/">[1] BIOS routines</a>
+    <br>
+    <br>
+    <a href="/learn/osdev/" >Back to Tutorial Menu</a><br>
+    <a href="#" >Back</a> <a href="/learn/osdev/2" >Next</a>
 
   </div>
-
   <div class="footer-spacer"></div>
-  
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Projects</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/learn/">Tutorials</a></li>
       </ul>
@@ -73,9 +78,10 @@
       All information is provided free of charge but if you use it elsewhere please reference the source.
     </div>
   </footer>
-
 </div>
 <!-- End of Content code -->
+
+
 
 </body>
 </html>

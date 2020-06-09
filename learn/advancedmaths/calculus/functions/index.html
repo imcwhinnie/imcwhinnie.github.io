@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Define title and header links -->
+  <title>Iain McWhinnie</title>
+  <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+  <link href="/main.css" type="text/css" rel="stylesheet" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<!-- Navigation header code -->
+<header>
+  <div class="container" >
+      <div class="logodiv">
+        <a href="/" ><img src="/trumpetboy.jpg" height="70px" alt="Trumpet Logo" class="logo" /></a>
+        <p class="logocaption">Iain McWhinnie</p>
+      </div>
+      <input type="checkbox" class="nav-toggle" id="nav-toggle">
+      <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/learn/">Tutorials</a></li>
+      </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label" >
+        <span></span>
+      </label>
+  </div>
+</header>
+<!-- End of navigation header -->
+
+
+<!-- Content code -->
+<div class="viewport">
+  <div class="banner">
+    <img src="/banner.jpg" class="bannerimg">
+  </div>
+  <div class="content" >
+
+    <div class="breadcrumb"><a href="/learn/">Tutorials</a> > <a href="/learn/advancedmaths/">
+    Advanced Higher Maths</a> > <a href="/learn/advancedmaths/calculus/">Calculus</a> >
+    Functions</div>
+    <h3>Functions</h3>
+    <p>08/06/2020</p>
+    <p>
+      What is a function? How can we visualise a function?
+    </p>
+    <h4>What is a function?</h4>
+    <p>
+      <b>A function relates one set of numbers to another set.</b> That might sound strange but lets think
+      about how functions were written in Higher Mathematics.<br>
+      You will be familiar with functions written as \[y=x+1\] or \[ f(x) = x+1 \] but what do \(x\)
+      and \(y\) actually represent here?
+      Well \(x\) and \(y\) are variables. Variables are unknown quantities that could be replaced
+      by any member of a set. For example \(x\) could be replaced by the value of 5 in which case
+      \(x\) would be a member of the Natural Numbers (\( x \in \mathbb{N}\)).
+    </p>
+    <p>
+      Now our definition of a function is starting to make a bit more sense. In the top form we can 
+      see that a the variable \(y\) (any member of a set of numbers) is defined in terms of another variable
+      \(x\) (also any member of a set). Instead of giving a list of all the output values for all possible
+      input values (which is usually impossible) we use a mathmatical rule instead. Given the input the
+      function details a set of mathematical sets that allow you to compute the output. All we do is add
+      one to the input.
+    </p>
+    <p>
+      The other notation makes clear which variable is an input to our
+      function. In this case \(x\) is a variable that is inputed to our function and instead of relating to
+      an output variable (\(y\)) the function is instead given a name of \(f\). Now the notation \(f(x)\) 
+      refers to the evalutation of our function when \(x\) is given as an input. This is the same notation
+      used for trigonometric functions like \(sin(x)\) and \(cos(x)\). In calculus often these
+      two notations are used interchangably and this can make certain proofs hard to follow. You will also
+      most likely know of the two notations for derivatives which relate to each of the notations given
+      here (more on this later). Currently we need to finish our definition of a function as it is not yet 
+      complete.
+    </p>
+    <p>
+      A key property of functions is that for an input value there must be only one value for the related
+      output. This makes sense. Suppose you want your function \(g(t)\) to give the temperature for any
+      time \(t\). Because function inputs have <b>unique outputs</b> it follows that your function will not have
+      two temperatures for any one time. And this is helpful because multiple outputs would be problematic
+      here: if you function gives you two values for a certain time then what actually is the temperature 
+      at that time? Is it the first value, the second, or neither? Thankfully we won't need to answer that
+      question.
+    </p>
+    <p>
+      To finish up our understanding of functions lets just get familiar with a bit of termininology. Since
+      functions relates two sets of mathematical objects then lets give a name to each of these sets. The
+      set of inputs to the function (also called arguments to the function) is called the <b>domain</b>. The 
+      set of output values is called the <b>range</b>.
+    </p>
+  </div>
+  <div class="footer-spacer"></div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/learn/">Tutorials</a></li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      This page belongs to Iain McWhinnie. It is hosted on Github Pages.
+      All information is provided free of charge but if you use it elsewhere please reference the source.
+    </div>
+  </footer>
+</div>
+<!-- End of Content code -->
+
+
+
+</body>
+</html>

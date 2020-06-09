@@ -189,6 +189,10 @@ a{
     padding-left: 30px;
 }
 
+.tab{
+    margin-left: 1em;
+}
+
 /* Footer Styling*/
 .footer-spacer{
     position: relative;
