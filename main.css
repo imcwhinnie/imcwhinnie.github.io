@@ -3,7 +3,7 @@ body{
     margin: 0px;
     width: 100%;
     height: 100%;
-    background-color: #666666;
+    background-color: #142b38;
 }
 
 
@@ -20,6 +20,7 @@ header{
     z-index: 999;
     width: 100%;
     position: fixed;
+    box-shadow: 0px 2px 3px #222222;
 }
 
 nav {
@@ -32,7 +33,7 @@ nav {
     transform: scale(1,0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
-    border-bottom: 8px solid #666666;
+    box-shadow: 0px 2px 3px #222222;
 }
 
 nav ul{
@@ -110,6 +111,96 @@ nav a{
     margin: 0 auto;
 }
 
+
+
+.banner{
+    width: 100%;
+    height: 100px;
+}
+
+.bannerimg{
+    object-fit: cover;
+    height: 100px;
+    width: 100%;
+    filter: brightness(80%);
+}
+
+
+/* Content code */
+
+.viewport{
+    position: relative;
+    top: 85px;
+    min-height: calc(100vh - 85px);
+}
+
+.content{
+    width: calc(85% - 40px);
+    background-color: #eeeeee;
+    position: relative;
+    margin: 0 7.5%;
+    padding: 30px 20px;
+    top: -40px;
+    min-height: 65vh;
+    box-shadow: 0px 2px 5px black;
+}
+
+h4{
+    margin: 0;
+}
+
+a{
+    color: #551a8b;
+}
+
+.projectssort{
+    padding-left: 30px;
+}
+
+.tab{
+    margin-left: 1em;
+}
+
+/* Footer Styling*/
+/*
+.footer-spacer{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: none;
+}
+footer spacer not needed
+*/
+ 
+footer{
+    bottom: 0;
+    width: 100%;
+    background-color: #456374;
+    position: relative;
+    box-shadow: 0px 2px 3px #111111 inset;
+}
+
+.footer-nav{
+    display: none;
+}
+
+.footer-info{
+    display: inline-block;
+    padding: 15px;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+}
+
+footer ul a{
+    color: inherit;
+}
+
+
+/*Media query at bottom for best results*/
+
 @media screen and (min-width: 800px){
     .nav-toggle-label{
         display: none;
@@ -136,94 +227,22 @@ nav a{
         display: flex;
         justify-content: space-around;
     }
-    /*
-    .logo{
-        position: relative;
-        top: 20px;
-    }
-    */
+    
     .logocaption{
         width: 100%;
         position: relative;
         background-color: white;
     }
-}
 
-.banner{
-    width: 100%;
-    height: 40px;
-}
+    /*Show footer nav only when large screen*/
+    .footer-nav {
+        display: inline-block;
+        width: 30%;
+        padding: 15px;
+        margin-left: 40px;
+    }
 
-.bannerimg{
-    object-fit: cover;
-    height: 40px;
-    width: 100%;
-}
-
-
-/* Content code */
-
-.viewport{
-    position: relative;
-    top: 85px;
-    min-height: calc(100vh - 85px);
-}
-
-.content{
-    width: 85%;
-    background-color: #eeeeee;
-    position: relative;
-    margin: 0 7.5%;
-    padding: 30px 20px;
-}
-
-h4{
-    margin: 0;
-}
-
-a{
-    color: #551a8b;
-}
-
-.projectssort{
-    padding-left: 30px;
-}
-
-.tab{
-    margin-left: 1em;
-}
-
-/* Footer Styling*/
-.footer-spacer{
-    position: relative;
-    width: 100%;
-    height: 150px;
-}
- 
-footer{
-    bottom: 0px;
-    width: 100%;
-    background-color: #333333;
-    position: absolute;
-}
-
-.footer-nav{
-    display: inline-block;
-    width: 30%;
-    padding: 15px;
-    margin-left: 40px;
-}
-.footer-info{
-    display: inline-block;
-    padding: 15px;
-    width: calc(70% - 150px);
-}
-
-footer ul{
-    list-style: none;
-    margin: 0;
-}
-
-footer ul a{
-    color: inherit;
+    .footer-info {
+        width: calc(70% - 150px);
+    }
 }

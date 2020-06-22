@@ -4,7 +4,9 @@
   <!-- Define title and header links -->
   <title>Iain McWhinnie</title>
   <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
-  <link href="/main.css" type="text/css" rel="stylesheet" />
+  <link href="/main.css?caching" type="text/css" rel="stylesheet" />
+  <!-- so that the css media query actually detects phone users, see https://www.html5rocks.com/en/mobile/mobifying -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
@@ -44,7 +46,7 @@
 
     <h3>Latest Project</h3>
     <p>
-      The latest project I have been working on is <b>this website</b>. I plan to add increased functionality
+      The latest project I have been working on (in collaboration with my brother) is <b>this website</b>. I plan to add increased functionality
       and content now that I am happy with the look and feel of the website.
     </p>
 
@@ -57,7 +59,7 @@
 
   </div>
 
-  <div class="footer-spacer"></div>
+  <!--<div class="footer-spacer"></div>-->
   
   <footer>
     <div class="footer-nav">
